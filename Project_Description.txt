@@ -1,0 +1,55 @@
+For Database:
+I am using MySQL database for this application.
+
+Database Name : websofttechs_db
+Create Database : CREATE DATABASE websofttechs_db;
+
+Show Databases : SHOW DATABASES;
+
+Use Database : USE websofttechs_db;
+
+Show Tables : SHOW TABLES;
+
+This database have 2 tables.
+
+Table 1 is employee.
+Create First Table (employee) : CREATE TABLE employee(id INT AUTO_INCREMENT, name VARCHAR(255) NOT NULL, phone VARCHAR(10) NOT NULL, email VARCHAR(255) NOT NULL, password VARCHAR(255) NOT NULL, status TINYINT(1) NOT NULL, PRIMARY KEY(id));
+
+Show Tables : SHOW TABLES;
+
+Describe First Table : DESC employee;
+
+Table 2 is experience.
+Create Second Table (experience) : CREATE TABLE experience(id INT AUTO_INCREMENT, employee_id INT NOT NULL, company_name VARCHAR(255) NOT NULL, role VARCHAR(255) NOT NULL, date_of_joining VARCHAR(50) NOT NULL, last_date VARCHAR(50) NOT NULL, PRIMARY KEY(id), FOREIGN KEY(employee_id) REFERENCES employee(id));
+
+Show Tables : SHOW TABLES;
+
+Describe Second Table : DESC experience;
+
+Show All the Data from First Table (employee) : SELECT * FROM employee; 
+
+Show All the Data from Second Table (employee) : SELECT * FROM experience;
+
+=======================================================================================================================================
+
+For Server : 
+In this application, I am using Apache Tomcat 9.0.82 version.
+
+=======================================================================================================================================
+
+About Project :
+This application name is "EmployeeRegistrationWebSoftTechsTask". I am creating "Maven Project" and I am adding 2 maven dependency that was "mysql-connector-java (8.0.28)" and "jstl (1.2)" in "pom.xml" file. An archetype which contains a sample Maven Webapp project "(maven-archetype-webapp (1.0))".
+
+Note:
+Please add Apache Tomcat v9.0 (Runtimes). 
+Steps to add Apache Tomcat v9.0 (Runtimes) :
+1. Right Click on Project
+2. Click on Properties
+3. Click on Project Facets
+4. Click on Runtimes (in Right Side)
+5. Click on Apache Tomcat v9.0
+6. Choose Dynamic Web Module Version (4.0 version)
+7. Choose Java Version (11 version)
+8. Apply and Close
+
+=======================================================================================================================================

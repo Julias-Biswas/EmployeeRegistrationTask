@@ -1,0 +1,218 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Start */
+.navbar {
+	display: flex;
+	flex-direction: row;
+	background: #011D2B;
+	margin-bottom: 24px;
+}
+
+img {
+	width: 150px;
+	vertical-align: middle;
+	border-style: none;
+}
+
+.navbar .box-1 .logo {
+	width: 100px;
+	height: 70px;
+	margin: 5px 24px;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.navbar ul li {
+	padding: 12px 24px;
+	list-style: none;
+}
+
+.navbar ul li a {
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+}
+
+/* Footer Start */
+footer {
+	background: #011D2B;
+	margin: 6% 0 0 0;
+}
+
+footer p {
+	text-align: center;
+	padding: 14px;
+	font-size: 17px;
+	color: white;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.form {
+	width: 40%;
+	border: 3px solid #011D2B;
+	margin-top: 6%;
+	padding: 8px 24px 8px 24px;
+}
+
+.first_heading {
+	font-size: 28px;
+	font-weight: 600;
+	text-align: center;
+	margin: 8px;
+}
+
+.field_row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.field_row label {
+	width: 35%;
+	font-size: 17px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"] {
+	width: 100%;
+	padding: 6px 8px;
+	margin: 8px 0 8px 0;
+	outline: none;
+	font-size: 16px;
+	border: 2px solid #011D2B;
+	border-radius: 2px;
+}
+
+.no-spinners {
+	-moz-appearance: textfield;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.field_row {
+	justify-content: center;
+}
+
+.mybtn {
+	padding: 8px 34px;
+	font-size: 18px;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	margin: 12px;
+}
+
+.btn-primary {
+	color: white;
+	background: blue;
+}
+
+/* Work Experience Table Design */
+#work_experience {
+	border-collapse: collapse;
+	width: 90%;
+	margin: 24px auto;
+}
+
+#work_experience td,
+#work_experience th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+#work_experience tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+#work_experience th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	background-color: #011D2B;
+	color: white;
+}
+
+.add_more {
+	display: flex;
+	margin: 10px 0px 0px 5%;
+}
+
+.button {
+	padding: 8px 24px;
+	font-size: 18px;
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	background: green;
+}
+
+.fa-solid, .fa-regular {
+	font-size: 18px;
+}
+
+.fa-xmark {
+	color: red;
+}
+
+.fa-pen-to-square {
+	color: green;
+}
+
+/* Error and Success Message Design */
+.error_design {
+	color: red;
+	text-align: center;
+	font-size: 19px;
+	font-weight: 600;
+	margin: 12px;
+}
+
+.success_design {
+	color: green;
+	text-align: center;
+	font-size: 19px;
+	font-weight: 600;
+	margin: 12px;
+}
+
+/* Modal Design */
+.modal-header,
+.modal-footer {
+	color: white;
+	background: #011D2B;
+}
+
+.close {
+	color: white;
+}
+
+.close:hover {
+	color: red;
+}
